@@ -6,9 +6,11 @@ namespace TabloidCLI
     {
         static void Main(string[] args)
         {
+            MainMenuManager menu = new MainMenuManager();
+            menu.GreetingMessage();
             // MainMenuManager implements the IUserInterfaceManager interface
             IUserInterfaceManager ui = new MainMenuManager();
-            ui.GreetingMessage();
+           
             while (ui != null)
             {
                 // Each call to Execute will return the next IUserInterfaceManager we should execute
