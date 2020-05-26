@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 namespace TabloidCLI.UserInterfaceManagers
 {
@@ -9,6 +10,9 @@ namespace TabloidCLI.UserInterfaceManagers
 
         public IUserInterfaceManager Execute()
         {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.WriteLine("Welcome to Tabloid");
+            Console.WriteLine("-------------------");
             Console.WriteLine("Main Menu");
 
             Console.WriteLine(" 1) Journal Management");
