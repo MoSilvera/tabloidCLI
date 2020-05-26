@@ -8,11 +8,14 @@ namespace TabloidCLI.UserInterfaceManagers
         private const string CONNECTION_STRING = 
             @"Data Source=localhost\SQLEXPRESS;Database=TabloidCLI;Integrated Security=True";
 
+        public void GreetingMessage(){
+            Console.WriteLine("Welcome to Tabloid!");
+            Console.WriteLine("It's like Medium, but not.");
+            Console.WriteLine("---------------------------");
+        }
+
         public IUserInterfaceManager Execute()
         {
-            Console.BackgroundColor = ConsoleColor.Red;
-            Console.WriteLine("Welcome to Tabloid");
-            Console.WriteLine("-------------------");
             Console.WriteLine("Main Menu");
 
             Console.WriteLine(" 1) Journal Management");
